@@ -1,0 +1,27 @@
+
+
+.navContenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    left: 100px;
+    
+    background-color: hwb(163 94% 3%);
+
+    .navLista{
+       
+        width: 350px;
+        left: 80px;
+
+        .navLink{
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            color: hwb(253 20% 18%);
+            margin-right: 40px;
+            margin-left: 25px;
+
+        }
+    }
+}
