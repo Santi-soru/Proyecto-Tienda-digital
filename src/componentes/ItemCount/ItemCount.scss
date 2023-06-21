@@ -1,0 +1,17 @@
+.botonContenedor{
+    width: 200px;
+    height: 60px;
+    
+
+    .botonDefinirCantidad{
+        display: flex;
+        width: 200px;
+        height: 30px;
+        
+        justify-content: space-around;
+        align-items: center;
+    }
+    .botonAgregar{
+        text-align: center;
+    }
+}

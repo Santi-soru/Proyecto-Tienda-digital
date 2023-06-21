@@ -1,5 +1,7 @@
 import './narBar.scss'
 import CartWidget from '../CartWidget/CartWidget'
+import { Link } from 'react-router-dom'
+
 
 export let NavBar = () =>{
 
@@ -10,9 +12,9 @@ export let NavBar = () =>{
               
               <div className='navLista'>
                 
-                <a href="" className='navLink'>Envios</a>
-                <a href="" className='navLink'>Tecnologias</a>
-                <a href="" className='navLink'>Nosotros</a>
+                <Link className='navLink' to='/'>Inicio</Link>
+                <Link className='navLink' to='/pros/Filamentes (FDM)'>Tegnologia DFM</Link>
+                <Link className='navLink' to='/pros/Resina (LCA)'>Imprecion LCA</Link>
               </div>
               <CartWidget/>
             </div>

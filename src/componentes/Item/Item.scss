@@ -1,0 +1,38 @@
+.contenedorItems{
+
+display: grid;
+gap: 20px;
+grid-template-columns:1fr 1fr 1fr 1fr ;
+margin-left: 50px;
+
+.itemContenedor{
+    border: solid 1px black;
+    width: 200px;
+    height:280px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+    .itemTitulo{
+        text-align: center;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
+    .itemCategoria{
+        position: relative;
+        bottom: -55px;
+    }
+
+    .itemPrecio{
+        position: relative;
+        bottom: -20px;
+    }
+
+    .itemLink{
+        position: relative;
+        bottom: 20px;
+    }
+}
+
