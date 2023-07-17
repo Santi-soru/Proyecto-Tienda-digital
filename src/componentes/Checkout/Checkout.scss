@@ -1,0 +1,26 @@
+.checkH2{
+    margin-left: 30px;
+    font-weight: 100px;
+    font-size: 30px;
+}
+.checkContenedor{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+   
+    form{
+        width: 600px;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        input{
+            height: 30px;
+            margin-bottom: 20px;
+        }
+
+    }
+}

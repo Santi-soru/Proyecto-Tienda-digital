@@ -1,0 +1,27 @@
+.cardContenedorPadre{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2{
+        direction: initial;
+    }
+    
+
+    .botonesContenedor{
+        display: flex;
+        gap: 30px;
+        
+    button{
+        text-decoration: none;
+    }
+
+    .botonCompra{
+        text-decoration: none;
+    }
+
+    }
+}

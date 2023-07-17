@@ -1,18 +1,17 @@
 import { useState } from "react"
 
 
-export function useOperaciones({init,stock}){
+export function useOperaciones({cantidad:contador ,setCantidad}){
     
-   
-const[contador, setContador]=useState(init)
+    let stock=6; 
 
 const sumar=()=>{
     if(contador < stock){
-    setContador(contador + 1);}
+    setCantidad(contador + 1);}
 }
 const restar=()=>{
     if(contador > 0 ){
-    setContador(contador - 1);}
+    setCantidad(contador - 1);}
 }
 
     return{ sumar,restar,contador}

@@ -1,22 +1,30 @@
 import '../ItemCount/ItemCount.scss'
-import { useOperaciones } from '../Hooks/useOperaciones';
 
 
 
-function ItemCount( propp){
+
+function ItemCount( {alCarro,stock,cantidad,setCantidad}){
    
-const{sumar ,restar,contador}=useOperaciones(propp)
+
+const sumar=()=>{
+    if(cantidad < stock){
+    setCantidad(cantidad + 1);}
+}
+const restar=()=>{
+    if(cantidad > 1 ){
+    setCantidad(cantidad - 1);}
+}
 
  
 return (
 <div className="botonContenedor">
     <div className="botonDefinirCantidad">
         <button onClick={sumar} className="botonSumar">+</button>
-        <p className="contadorBoton">Cantidad : {contador}</p>
+        <p className="contadorBoton">Cantidad : {cantidad}</p>
         <button onClick={restar} className="botonRestar" >-</button>
     </div>
     <div className="botonAgregar">
-        <button>Agregar al carro</button>
+        <button onClick={alCarro}>Agregar al carro</button>
     </div>
 </div>
 );

@@ -20,19 +20,31 @@ margin-left: 50px;
         font-size: 15px;
     }
 
+    .itemImagen{
+        width: 120px;
+        height: 120px;
+    }
+
     .itemCategoria{
         position: relative;
-        bottom: -55px;
+        bottom: 0px;
     }
 
     .itemPrecio{
         position: relative;
-        bottom: -20px;
+        bottom: 20px;
     }
 
     .itemLink{
         position: relative;
         bottom: 20px;
     }
+}
+.listH2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100px;
+    font-size: 30px;
+    margin-left: 30px;
+    
 }
 

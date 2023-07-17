@@ -1,18 +1,14 @@
-import { useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import './CartWidget.scss'
+import { caritoContex } from "../contexto/caritoProvedor"
+import { Link } from "react-router-dom"
 const CartWidget = () =>{
-   
-    const [Harcodeado, setHarcodeado]=useState(0)
-  
-    function numeroRandom(){
-        setHarcodeado(Math.round(Math.random()*20));
-        
-        
-    }
+    const{numero}=useContext(caritoContex)
+    
 
     return(
         <div className="bolsaContenedor"> 
-            <button  onClick={numeroRandom}><img src="imgenes improsoras\icono bolsa.png" alt="" className="bolsaCompras"  /><span className="numeroRandom" >{Harcodeado}</span> </button>
+            <Link to='/card'><img src="imgenes improsoras\icono bolsa.png" alt="" className="bolsaCompras"  /><span className="numeroRandom" >{numero}</span> </Link>
         </div>
     )
 
